@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo1</title>
+</head>
+<body>
+    <h1 id="titulo" ondblclick= "mudarTexto()">Olá JavaScript!</h1>
+    <!-- <button ondblclick="emitirMensagem()">Mensagem</button> "Funciona com um clique"
+    <button onclick="emitirMensagem()">Mensagem</button> "Funciona com um clique duplo"
+    <button onmousedown="emitirMensagem()">Mensagem</button> "Funciona com cursor do mouse sobre o botão"
+    <button onmousewheel="emitirMensagem()">Mensagem</button> "Funciona com a rolagem do botão do mouse sobre o botão"-->
+    <button onmousemove="emitirMensagem()">Mensagem</button>
+    <script>
+        
+        let titulo = document.getElementById('titulo')
+        function mudarTexto(){
+            titulo.textContent = 'Olá Senac Catanduva'
+            
+        }
+
+        function emitirMensagem(){
+            alert("Olá Técnico em Informática para Internet!")
+        }
+    </script>
+</body>
+</html>
