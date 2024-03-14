@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo1</title>
+</head>
+<body>
+    <h1 id="titulo" onmousemove= "mudarTexto()">Olá JavaScript!</h1>
+    <button onmousemove="emitirMensagem()">Mensagem</button>
+    <script>
+        
+        let titulo = document.getElementById('titulo')
+        function mudarTexto(){
+            let mensagem = titulo.textContent
+            if (mensagem == 'Olá JavaScript!') {
+                titulo.textContent = 'Olá Senac Catanduva!'
+            } else {
+                mensagem = 'Olá JavaScript!'
+            }
+           
+        }
+
+        function emitirMensagem(){
+            alert("Olá Técnico em Informática para Internet!")
+        }
+    </script>
+</body>
+</html>
+
+<!--let: variavel
+    -->
