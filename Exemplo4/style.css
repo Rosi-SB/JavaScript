@@ -1,0 +1,15 @@
+button{
+    margin: 5px 2px 5px 2px;
+}
+#frame{
+    margin: auto;
+    border: double 3px aquamarine;
+}
+.pequeno{
+    width: 100px;
+    height: 100px;
+}
+.grande{
+    width: 300px;
+    height: 300px;
+}
