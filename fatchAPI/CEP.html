@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Busca CEP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card-header bg-success">
+            <div class="card"> <!--Entradas - Campos e botão-->
+                <h1 class="text-center">Consulta de CEP</h1>
+            </div>
+        </div>
+        <div class="card-body bg-dark">
+            <nav class="navbar navbar-light">
+                <form class="form-control bg-dark" >  
+                    <div class="row">
+                        <div class="col-12 d-flex">
+                            <input class="form-control" name="cep" autofocus>
+                            <button class="btn btn-outline-success mx-2" btn-submit><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 my-1">
+                                <label for="endereco" class="form-label">Rua</label>
+                                <input class="form-control" name="endereco" placeholder="Ex.: Rua Brasil" disabled >
+                                <label for="bairro" class="form-label">Bairro</label>
+                                <input class="form-control" name="bairro" placeholder="Ex.: Vila Velha" disabled >
+                                <label for="cidade" class="form-label">Cidade</label>
+                                <input class="form-control" name="cidade" placeholder="Ex.: Pindorama" disabled >
+                                <label for="uf" class="form-label">SP</label>
+                                <input class="form-control" name="uf" placeholder="Ex.: SP" disabled >
+                            </div>
+                    </div>
+                </form>
+            </nav>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</html>
